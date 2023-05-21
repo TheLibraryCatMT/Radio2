@@ -360,4 +360,15 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
+    @Test
+    public void stationCounterItCounteris20ansStationNum14 () {
+        Radio radio = new Radio(20 );
+        radio.setCurrentStationNumber(14);
+
+        int expected = 14;
+        int actual = radio.getCurrentStationNumber();
+        Assertions.assertEquals(expected, actual);
+
+    }
 }
